@@ -1,12 +1,12 @@
 window.onload = function () {
-    var delayTime = 800;
+    var delayTime = 700;
     anime.timeline({ loop: false })
         .add({
             targets: '.name',
             scale: [10, 1],
             opacity: [0, 1],
             easing: "easeOutCirc",
-            duration: 800,
+            duration: delayTime,
             delay: (el, i) => delayTime * i
         });
 
